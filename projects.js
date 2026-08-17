@@ -32,7 +32,7 @@ const PROJECTS = [
     team: "10-member, non-academic team",
     stack: ["SolidWorks", "ESP32", "Thruster Design"],
     summary: "Designed the vehicle structure and thruster mounting brackets for underwater navigation and exploration. Serving as team leader and design engineer for Team Diyakwa, selected for the SAUVC 2026 finals in China representing Sri Lanka.",
-    image: "",
+    image: "assets/projects/diyakawa.jpg",
     link: ""
   },
   {

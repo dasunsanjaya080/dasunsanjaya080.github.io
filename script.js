@@ -20,7 +20,7 @@ function projectCard(p) {
     : "";
 
   return `
-    <article class="card">
+    <article class="card reveal">
       <span class="card__fiducial card__fiducial--tl" aria-hidden="true"></span>
       <span class="card__fiducial card__fiducial--br" aria-hidden="true"></span>
 
@@ -67,7 +67,7 @@ const legend = document.getElementById("skills-legend");
 
 function legendRow(s) {
   return `
-    <div class="legend__row">
+    <div class="legend__row reveal">
       <span class="legend__group mono">${s.group}</span>
       <span class="legend__items">${s.items}</span>
     </div>
@@ -75,3 +75,25 @@ function legendRow(s) {
 }
 
 legend.innerHTML = SKILLS.map(legendRow).join("");
+
+function setupRevealObserver() {
+  const revealItems = document.querySelectorAll('.reveal, .section, .pin');
+
+  if (!('IntersectionObserver' in window)) {
+    revealItems.forEach(item => item.classList.add('visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+
+  revealItems.forEach((item) => observer.observe(item));
+}
+
+setupRevealObserver();

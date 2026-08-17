@@ -55,6 +55,17 @@ button:focus-visible {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* subtle PCB grid backdrop */
 .pcb-grid {
   position: fixed;
@@ -64,7 +75,7 @@ button:focus-visible {
     linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: 48px 48px;
-  opacity: 0.12;
+  opacity: 0.45;
 }
 
 /* ============================================================
@@ -119,6 +130,7 @@ button:focus-visible {
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.02em;
+  animation: fadeUp 0.8s cubic-bezier(.2,.8,.2,1);
 }
 
 .hero__role {
@@ -132,6 +144,7 @@ button:focus-visible {
   margin-top: 22px;
   color: var(--ink-dim);
   font-size: 17px;
+  animation: fadeUp 0.9s cubic-bezier(.2,.8,.2,1) 0.08s both;
 }
 
 /* pin-row / connector strip */
@@ -152,11 +165,12 @@ button:focus-visible {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-1);
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.25s ease;
 }
 a.pin:hover {
   border-color: var(--copper);
   background: var(--bg-2);
+  transform: translateY(-2px);
 }
 .pin--static { cursor: default; }
 
@@ -214,6 +228,7 @@ main {
   max-width: 680px;
   color: var(--ink-dim);
   font-size: 16px;
+  line-height: 1.8;
 }
 
 /* ============================================================
@@ -250,6 +265,9 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.card:hover .card__media img {
+  transform: scale(1.02);
 }
 
 .card__placeholder {
@@ -365,6 +383,20 @@ main {
 .footer__inner { max-width: var(--max-w); margin: 0 auto; }
 .footer__line { font-size: 12px; color: var(--ink-faint); }
 .footer__sub { margin-top: 8px; font-size: 13px; color: var(--ink-faint); }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* ============================================================
    RESPONSIVE
