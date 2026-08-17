@@ -28,7 +28,7 @@ const PROJECTS = [
     title: "Autonomous Underwater Vehicle — Team Diyakwa",
     tag: "SAUVC 2026 Competition",
     status: "Finalist — China",
-    period: "2025 – Present",
+    period: "2025 – 2026",
     team: "10-member, non-academic team",
     stack: ["SolidWorks", "ESP32", "Thruster Design"],
     summary: "Designed the vehicle structure and thruster mounting brackets for underwater navigation and exploration. Serving as team leader and design engineer for Team Diyakwa, selected for the SAUVC 2026 finals in China representing Sri Lanka.",
