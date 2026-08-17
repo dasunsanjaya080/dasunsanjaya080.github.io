@@ -314,6 +314,17 @@ main {
   line-height: 1.25;
 }
 
+.card__title-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.card__title-link:hover {
+  color: var(--copper);
+}
+
 .card__summary {
   color: var(--ink-dim);
   font-size: 14px;

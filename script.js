@@ -32,7 +32,7 @@ function projectCard(p) {
           <span class="card__tag mono">${p.tag}</span>
         </div>
 
-        <h3 class="card__title">${p.title}</h3>
+        <h3 class="card__title"><a href="project-detail.html?id=${p.id}" class="card__title-link">${p.title}</a></h3>
         <p class="card__summary">${p.summary}</p>
 
         <dl class="spec">
