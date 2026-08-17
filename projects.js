@@ -147,30 +147,33 @@ const PROJECTS = [
     summary: "A growing set of smaller ROS2 experiments and simulations — kinematics, control, and simulation work built alongside coursework and larger team projects.",
     image: "",
     link: "",
-    detailedDescription: "This is an ongoing collection of robotics experiments and learning projects using ROS2 (Robot Operating System 2). The projects cover various aspects of robotics including kinematics, path planning, control systems, and simulation. Each mini-project explores different robotic challenges and ROS2 concepts.",
-    processSteps: [
-      {
-        title: "ROS2 Fundamentals & Environment Setup",
-        description: "Learned ROS2 architecture, created development environment, and studied publish-subscribe messaging patterns."
-      },
-      {
-        title: "Gazebo Simulation Platform",
-        description: "Set up Gazebo simulation environment and created virtual robot models for safe experimentation."
-      },
-      {
-        title: "Kinematics & Control Implementations",
-        description: "Implemented forward and inverse kinematics, motion planning, and control algorithms for various robotic systems."
-      },
-      {
-        title: "Multi-Robot Coordination",
-        description: "Explored communication and coordination between multiple robots using ROS2 topics and services."
-      },
-      {
-        title: "Ongoing Development",
-        description: "Continuously adding new mini-projects and experiments to explore advanced robotics concepts."
-      }
-    ],
-    galleryImages: []
+    detailedDescription: "",
+    processSteps: [],
+    galleryImages: [
+      "assets/projects/ros2-01.jpg",
+      "assets/projects/ros2-02.jpg",
+      "assets/projects/ros2-03.jpg"
+    ]
+  },
+  {
+    id: "PRJ-05",
+    title: "CAD Design Portfolio",
+    tag: "Design Showcase",
+    status: "Ongoing",
+    period: "2024 – Present",
+    team: "Individual project",
+    stack: ["SolidWorks", "AutoCAD", "3D Modeling"],
+    summary: "Collection of mechanical designs and CAD models covering robotics, mechanical systems, and product design concepts.",
+    image: "",
+    link: "",
+    detailedDescription: "",
+    processSteps: [],
+    galleryImages: [
+      "assets/projects/cad-01.jpg",
+      "assets/projects/cad-02.jpg",
+      "assets/projects/cad-03.jpg",
+      "assets/projects/cad-04.jpg"
+    ]
   }
 ];
 

@@ -27,6 +27,10 @@ function renderHero(project) {
 
 // Render project description
 function renderDescription(project) {
+  if (!project.detailedDescription || project.detailedDescription.trim() === "") {
+    document.getElementById('description-section').style.display = 'none';
+    return;
+  }
   document.getElementById('project-description').textContent = project.detailedDescription;
 }
 
