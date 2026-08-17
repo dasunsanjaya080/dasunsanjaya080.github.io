@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dasun Nimeth Sanjaya — Mechatronics Engineering</title>
+<meta name="description" content="Portfolio of Dasun Nimeth Sanjaya, Mechatronics Engineering undergraduate — robotics, embedded systems, and autonomous vehicles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background grid + fiducials -->
+<div class="pcb-grid" aria-hidden="true"></div>
+
+<header class="hero">
+  <span class="fiducial fiducial--tl" aria-hidden="true"></span>
+  <span class="fiducial fiducial--tr" aria-hidden="true"></span>
+
+  <div class="hero__inner">
+    <p class="eyebrow mono">REV 01 &nbsp;·&nbsp; UPDATED <span id="hero-date"></span></p>
+    <h1 class="hero__name">Dasun Nimeth<br>Sanjaya</h1>
+    <p class="hero__role mono">MECHATRONICS ENGINEERING — UNDERGRADUATE</p>
+    <p class="hero__blurb">
+      Building the bridge between hardware and control — autonomous vehicles,
+      embedded systems, and robotics, from PCB to control loop.
+    </p>
+
+    <nav class="pin-row" aria-label="Contact">
+      <a class="pin" href="mailto:dasunsanjaya080@gmail.com">
+        <span class="pin__dot" aria-hidden="true"></span>
+        <span class="pin__label mono">EMAIL</span>
+        <span class="pin__value">dasunsanjaya080@gmail.com</span>
+      </a>
+      <a class="pin" href="https://github.com/dasunsanjaya080" target="_blank" rel="noopener">
+        <span class="pin__dot" aria-hidden="true"></span>
+        <span class="pin__label mono">GITHUB</span>
+        <span class="pin__value">dasunsanjaya080</span>
+      </a>
+      <span class="pin pin--static">
+        <span class="pin__dot" aria-hidden="true"></span>
+        <span class="pin__label mono">BASE</span>
+        <span class="pin__value">Galle, Sri Lanka</span>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="tag mono">§ 01</span>
+      <h2>About</h2>
+    </div>
+    <p class="about__text">
+      I'm a 3rd-year Mechatronics Engineering undergraduate at the University of
+      Moratuwa, Sri Lanka. My work sits across CAD, embedded firmware, and control —
+      from designing thruster brackets for an autonomous underwater vehicle to
+      wiring up DAQ systems and getting robots to move the way they're supposed to.
+      Currently team leader and design engineer for an AUV headed to the SAUVC 2026
+      finals, and working through a growing set of ROS2 and robotics experiments
+      on the side.
+    </p>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="tag mono">§ 02</span>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+      <!-- injected by script.js from projects.js -->
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="tag mono">§ 03</span>
+      <h2>Skill legend</h2>
+    </div>
+
+    <div class="legend" id="skills-legend">
+      <!-- injected by script.js from projects.js -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="fiducial fiducial--bl" aria-hidden="true"></span>
+  <span class="fiducial fiducial--br" aria-hidden="true"></span>
+  <div class="footer__inner">
+    <p class="mono footer__line">DASUN NIMETH SANJAYA — MECHATRONICS ENGINEERING</p>
+    <p class="footer__sub">Built by hand, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
