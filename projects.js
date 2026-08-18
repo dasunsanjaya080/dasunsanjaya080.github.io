@@ -29,15 +29,15 @@ const PROJECTS = [
   {
     id: "PRJ-01",
     title: "Autonomous Underwater Vehicle — Team Diyakwa",
-    tag: "SAUVC 2026 Competition",
-    status: "Finalist — China",
+    tag: "Singapore Autonomous Underwater Vehicle Competition (SAUVC)",
+    status: "Selected for Finals — China 2026",
     period: "2025 – 2026",
     team: "10-member, non-academic team",
     stack: ["SolidWorks", "ESP32", "Thruster Design"],
-    summary: "Designed the vehicle structure and thruster mounting brackets for underwater navigation and exploration. Serving as team leader and design engineer for Team Diyakwa, selected for the SAUVC 2026 finals in China representing Sri Lanka.",
+    summary: "Designed the vehicle structure and thruster mounting brackets for underwater navigation and exploration. Serving as team leader and design engineer for Team Diyakwa, selected for the SAUVC finals in China 2026 representing Sri Lanka.",
     image: "assets/projects/diyakawa.jpg",
     link: "",
-    detailedDescription: "Team Diyakwa is competing in the Southeast Asia Underwater Vehicle Championship (SAUVC) 2026 in China. As the design engineer and team leader, I am responsible for the overall vehicle architecture, structural design, and thruster integration. The AUV is designed for autonomous underwater navigation with emphasis on stability, maneuverability, and sensor integration. The vehicle will navigate through underwater challenges including object detection, navigation gates, and autonomous path planning.",
+    detailedDescription: "Team Diyakwa was selected for the finals of the Singapore Autonomous Underwater Vehicle Competition (SAUVC) in China 2026. As the design engineer and team leader, I am responsible for the overall vehicle architecture, structural design, and thruster integration. The AUV is designed for autonomous underwater navigation with emphasis on stability, maneuverability, and sensor integration. The vehicle is developed to tackle underwater challenges including object detection, navigation gates, and autonomous path planning.",
     processSteps: [
       {
         title: "Phase 1: Conceptual Design & SolidWorks Modeling",
