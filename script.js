@@ -15,9 +15,15 @@ function projectCard(p) {
          <span class="card__placeholder-hint">assets/projects/…</span>
        </div>`;
 
-  const linkBlock = p.link
+  const externalLinkBlock = p.link
     ? `<a class="card__link" href="${p.link}" target="_blank" rel="noopener">View project ↗</a>`
     : "";
+
+  const detailsLinkBlock = `
+    <a class="card__link card__link--detail" href="project-detail.html?id=${p.id}">Project details →</a>
+  `;
+
+  const footerLinks = [detailsLinkBlock, externalLinkBlock].filter(Boolean).join("");
 
   return `
     <article class="card reveal">
@@ -54,7 +60,9 @@ function projectCard(p) {
           </div>
         </dl>
 
-        ${linkBlock}
+        <div class="card__links">
+          ${footerLinks}
+        </div>
       </div>
     </article>
   `;

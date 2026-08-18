@@ -346,8 +346,14 @@ main {
 .spec__row dt { color: var(--ink-faint); }
 .spec__row dd { margin: 0; color: var(--ink); }
 
-.card__link {
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
   margin-top: 6px;
+}
+
+.card__link {
   font-size: 13px;
   color: var(--copper);
   align-self: flex-start;
