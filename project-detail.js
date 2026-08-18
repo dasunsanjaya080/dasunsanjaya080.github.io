@@ -83,6 +83,56 @@ function renderProcessTimeline(project) {
   setupRevealObserver();
 }
 
+// Render category page with sub-projects
+function renderCategoryPage(project) {
+  // Hide the normal detail sections
+  document.getElementById('description-section').style.display = 'none';
+  document.getElementById('process-section').style.display = 'none';
+  document.getElementById('gallery-section').style.display = 'none';
+  document.getElementById('specs-section').style.display = 'none';
+
+  // Get sub-projects
+  const subProjects = project.subProjects.map(id => findProject(id)).filter(Boolean);
+
+  // Create category grid
+  const categoryHTML = `
+    <section class="detail-section category-section">
+      <div class="category-grid">
+        ${subProjects.map(subProject => `
+          <article class="category-card reveal">
+            <div class="category-card__media">
+              ${subProject.image 
+                ? `<img src="${subProject.image}" alt="${subProject.title}" loading="lazy">`
+                : `<div class="category-card__placeholder">
+                     <span class="mono">NO IMAGE</span>
+                   </div>`
+              }
+            </div>
+            <div class="category-card__body">
+              <span class="category-card__id mono">${subProject.id}</span>
+              <h3 class="category-card__title">${subProject.title}</h3>
+              <p class="category-card__summary">${subProject.summary}</p>
+              <div class="category-card__meta">
+                <span class="mono category-card__period">${subProject.period}</span>
+                <span class="mono category-card__stack">${subProject.stack.join(' · ')}</span>
+              </div>
+              <a class="category-card__link" href="project-detail.html?id=${subProject.id}">View details →</a>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `;
+
+  // Insert after hero
+  const heroSection = document.getElementById('detail-hero');
+  const newSection = document.createElement('div');
+  newSection.innerHTML = categoryHTML;
+  heroSection.parentNode.insertBefore(newSection.firstElementChild, heroSection.nextSibling);
+
+  setupRevealObserver();
+}
+
 // Render photo gallery (supports both images and videos)
 function renderGallery(project) {
   if (!project.galleryImages || project.galleryImages.length === 0) {
@@ -156,12 +206,18 @@ function initDetailPage() {
   // Update page title
   document.title = `${project.title} — Dasun Nimeth Sanjaya`;
 
-  // Render all sections
-  renderHero(project);
-  renderDescription(project);
-  renderSpecs(project);
-  renderProcessTimeline(project);
-  renderGallery(project);
+  // Check if this is a category page
+  if (project.isCategoryPage) {
+    renderHero(project);
+    renderCategoryPage(project);
+  } else {
+    // Render all sections for normal projects
+    renderHero(project);
+    renderDescription(project);
+    renderSpecs(project);
+    renderProcessTimeline(project);
+    renderGallery(project);
+  }
 
   // Setup animations
   setupRevealObserver();

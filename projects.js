@@ -167,6 +167,23 @@ const PROJECTS = [
   },
   {
     id: "PRJ-05",
+    title: "CAD Design Portfolio",
+    tag: "Design Showcase",
+    status: "Ongoing",
+    period: "2024 – Present",
+    team: "Individual project",
+    stack: ["SolidWorks", "AutoCAD", "3D Modeling"],
+    summary: "Comprehensive collection of mechanical CAD designs spanning product engineering, robotics systems, and precision components including reverse-engineered parts, thruster systems, and battery solutions.",
+    image: "assets/projects/ball_valve_handle.png",
+    link: "",
+    detailedDescription: "",
+    processSteps: [],
+    isCategoryPage: true,
+    subProjects: ["PRJ-06", "PRJ-07", "PRJ-08", "PRJ-09"],
+    galleryImages: []
+  },
+  {
+    id: "PRJ-06",
     title: "Hand Mixer Motor Housing — Reverse Engineering",
     tag: "CAD Mini Project",
     status: "Completed",
@@ -185,7 +202,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: "PRJ-06",
+    id: "PRJ-07",
     title: "AUV Thruster System Design",
     tag: "CAD Mini Project",
     status: "Completed",
@@ -203,7 +220,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: "PRJ-07",
+    id: "PRJ-08",
     title: "Removable EV Battery Pack System",
     tag: "CAD Mini Project",
     status: "Completed",
@@ -222,7 +239,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: "PRJ-08",
+    id: "PRJ-09",
     title: "Mechanical Components & Practice Designs",
     tag: "CAD Mini Project",
     status: "Completed",
