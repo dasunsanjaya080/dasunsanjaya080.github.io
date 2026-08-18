@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications — Dasun Nimeth Sanjaya</title>
+  <meta name="description" content="Certificates and learning milestones in ROS2, MATLAB, Simulink, and Simscape for Dasun Nimeth Sanjaya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cert-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    .cert-page__header {
+      margin-bottom: 42px;
+    }
+
+    .cert-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--copper);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      margin-bottom: 18px;
+    }
+
+    .cert-page__title {
+      font-size: clamp(32px, 5vw, 54px);
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .cert-page__intro {
+      max-width: 720px;
+      color: var(--ink-dim);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 32px;
+    }
+
+    .cert-card {
+      background: var(--bg-1);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cert-card:hover {
+      border-color: var(--line-bright);
+      transform: translateY(-2px);
+    }
+
+    .cert-card__image {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      background: var(--bg-2);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .cert-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cert-card__image--missing {
+      color: var(--ink-dim);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 18px;
+      text-align: center;
+      background-image:
+        linear-gradient(45deg, var(--bg-1) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--bg-1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--bg-1) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--bg-1) 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+    }
+
+    .cert-card__body {
+      padding: 20px 20px 24px;
+    }
+
+    .cert-card__tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      color: var(--copper);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .cert-card__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .cert-card__description {
+      color: var(--ink-dim);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .cert-card__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      color: var(--ink-faint);
+      font-size: 12.5px;
+      font-family: var(--font-mono);
+    }
+
+    .cert-card__meta a {
+      color: var(--copper);
+    }
+
+    @media (max-width: 640px) {
+      .cert-page {
+        padding-top: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pcb-grid" aria-hidden="true"></div>
+
+  <main class="cert-page">
+    <header class="cert-page__header">
+      <a href="index.html" class="cert-page__back mono">← Back to Portfolio</a>
+      <h1 class="cert-page__title">Certificates</h1>
+      <p class="cert-page__intro">
+        A selection of structured learning milestones focused on ROS2, robotics systems,
+        control engineering, and simulation workflows used in autonomous systems and mechatronics work.
+      </p>
+    </header>
+
+    <section class="cert-list" aria-label="Professional certificates">
+      <article class="cert-card">
+        <div class="cert-card__image">
+          <img src="assets/certifications/ROS%202%20for%20Beginners%20Level%202.jpg" alt="ROS2 Beginners certificate">
+        </div>
+        <div class="cert-card__body">
+          <span class="cert-card__tag">ROS2</span>
+          <h2 class="cert-card__title">ROS2 Beginners</h2>
+          <p class="cert-card__description">
+            This course introduced the fundamentals of ROS2, including nodes, topics, services,
+            parameters, launch files, and basic robot communication patterns. It strengthened my
+            understanding of how distributed robotic systems are structured, tested, and scaled in
+            real-world projects.
+          </p>
+          <div class="cert-card__meta">
+            <span>Repository:</span>
+            <a href="https://github.com/dasunsanjaya080/ROS2_works" target="_blank" rel="noopener">ROS2_works</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-card__image">
+          <img src="assets/certifications/matlabonramp.png" alt="MATLAB Onramp certificate">
+        </div>
+        <div class="cert-card__body">
+          <span class="cert-card__tag">MATLAB</span>
+          <h2 class="cert-card__title">MATLAB Onramp</h2>
+          <p class="cert-card__description">
+            MATLAB Onramp helped me build confidence with MATLAB programming essentials, such as arrays,
+            plotting, logic flow, and practical data analysis. It provided a strong foundation for using
+            MATLAB in engineering problem solving, signal processing, and technical computation.
+          </p>
+          <div class="cert-card__meta">
+            <span>Core skill: numerical computing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-card__image">
+          <img src="assets/certifications/simulinkonramp.png" alt="Simulink Onramp certificate">
+        </div>
+        <div class="cert-card__body">
+          <span class="cert-card__tag">Simulink</span>
+          <h2 class="cert-card__title">Simulink Onramp</h2>
+          <p class="cert-card__description">
+            The Simulink Onramp introduced model-based design workflows for dynamic systems, signal flow,
+            and simulation logic. This was especially useful for understanding control systems and visualizing
+            how system behavior evolves over time in a block-based environment.
+          </p>
+          <div class="cert-card__meta">
+            <span>Core skill: system simulation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-card__image">
+          <img src="assets/certifications/simscapeonramp.png" alt="Simscape Onramp certificate">
+        </div>
+        <div class="cert-card__body">
+          <span class="cert-card__tag">Simscape</span>
+          <h2 class="cert-card__title">Simscape Onramp</h2>
+          <p class="cert-card__description">
+            Simscape Onramp expanded my work from algorithmic modeling into physical system modeling,
+            covering energy-based components and real-world system interaction. It gave me a clearer
+            understanding of how mechanical, electrical, and control domains can be represented together
+            in simulation.
+          </p>
+          <div class="cert-card__meta">
+            <span>Core skill: physical modeling</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
