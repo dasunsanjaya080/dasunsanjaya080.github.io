@@ -40,28 +40,27 @@ const PROJECTS = [
     detailedDescription: "Team Diyakwa is competing in the Southeast Asia Underwater Vehicle Championship (SAUVC) 2026 in China. As the design engineer and team leader, I am responsible for the overall vehicle architecture, structural design, and thruster integration. The AUV is designed for autonomous underwater navigation with emphasis on stability, maneuverability, and sensor integration. The vehicle will navigate through underwater challenges including object detection, navigation gates, and autonomous path planning.",
     processSteps: [
       {
-        title: "Conceptual Design & Requirements Analysis",
-        description: "Analyzed competition requirements and developed initial vehicle specifications including dimensions, weight distribution, and propulsion requirements."
+        title: "Phase 1: Conceptual Design & SolidWorks Modeling",
+        description: "Analyzed competition requirements and created detailed 3D models of the vehicle frame, pressure hull design, and thruster mounting brackets with emphasis on hydrodynamic efficiency."
       },
       {
-        title: "Structural Design in SolidWorks",
-        description: "Created detailed 3D models of the vehicle frame, pressure hull design, and thruster mounting brackets with emphasis on hydrodynamic efficiency."
+        title: "Phase 2: Manufacturing & Assembly",
+        description: "Transitioned from design to physical manufacturing, fabricating structural components and assembling the vehicle frame with integrated thruster mounts."
       },
       {
-        title: "Thruster Selection & Integration",
-        description: "Selected appropriate thrusters based on vehicle specifications and designed custom mounting brackets for optimal thrust vectoring."
+        title: "Phase 3: Pool Testing & Buoyancy Validation",
+        description: "Conducted initial pool testing to validate vehicle buoyancy, balance, and response to thruster commands before progressing to advanced maneuvers."
       },
       {
-        title: "Electronics & Control System Integration",
-        description: "Integrated ESP32 microcontroller with sensor arrays including cameras, pressure sensors, and IMU for autonomous control."
-      },
-      {
-        title: "Testing & Iteration",
-        description: "Conducted pool testing and hydrodynamic analysis to validate design and make iterative improvements."
+        title: "Phase 4: Operational Testing & Refinement",
+        description: "Performed final operational testing of the vehicle in controlled environments, demonstrating autonomous navigation and mission-critical functionality for competition readiness."
       }
     ],
     galleryImages: [
-      "assets/projects/diyakawa.jpg"
+      "assets/projects/diyakawa/phase1.png",
+      "assets/projects/diyakawa/phase2.jpeg",
+      "assets/projects/diyakawa/phase3.mp4",
+      "assets/projects/diyakawa/Phase4.mp4"
     ]
   },
   {

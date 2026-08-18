@@ -83,18 +83,33 @@ function renderProcessTimeline(project) {
   setupRevealObserver();
 }
 
-// Render photo gallery
+// Render photo gallery (supports both images and videos)
 function renderGallery(project) {
   if (!project.galleryImages || project.galleryImages.length === 0) {
     document.getElementById('gallery-section').style.display = 'none';
     return;
   }
 
-  const galleryHTML = project.galleryImages.map(img => `
-    <div class="gallery-item reveal">
-      <img src="${img}" alt="Project gallery image" loading="lazy">
-    </div>
-  `).join('');
+  const galleryHTML = project.galleryImages.map(media => {
+    const isVideo = /\.(mp4|webm|ogg)$/i.test(media);
+    
+    if (isVideo) {
+      return `
+        <div class="gallery-item reveal">
+          <video controls preload="metadata" style="width: 100%; height: auto;">
+            <source src="${media}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      `;
+    } else {
+      return `
+        <div class="gallery-item reveal">
+          <img src="${media}" alt="Project gallery image" loading="lazy">
+        </div>
+      `;
+    }
+  }).join('');
 
   document.getElementById('photo-gallery').innerHTML = galleryHTML;
   document.getElementById('gallery-section').style.display = 'block';
