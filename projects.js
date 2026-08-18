@@ -195,6 +195,7 @@ const PROJECTS = [
     link: "",
     detailedDescription: "",
     processSteps: [],
+    hidden: true,
     galleryImages: [
       "assets/projects/motor-housing/actual.jpeg",
       "assets/projects/motor-housing/reverse_front.png",
@@ -214,6 +215,7 @@ const PROJECTS = [
     link: "",
     detailedDescription: "",
     processSteps: [],
+    hidden: true,
     galleryImages: [
       "assets/projects/diyakawa/thruster_front.png",
       "assets/projects/diyakawa/thruster_up.png"
@@ -232,6 +234,7 @@ const PROJECTS = [
     link: "",
     detailedDescription: "",
     processSteps: [],
+    hidden: true,
     galleryImages: [
       "assets/projects/removable-battery/guid_rails.JPG",
       "assets/projects/removable-battery/inside.JPG",
@@ -251,6 +254,7 @@ const PROJECTS = [
     link: "",
     detailedDescription: "",
     processSteps: [],
+    hidden: true,
     galleryImages: [
       "assets/projects/cad-practice/circularclamp.png",
       "assets/projects/cad-practice/flange_pipe.png",

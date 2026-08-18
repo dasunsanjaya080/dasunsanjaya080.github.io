@@ -68,7 +68,10 @@ function projectCard(p) {
   `;
 }
 
-grid.innerHTML = PROJECTS.map(projectCard).join("");
+grid.innerHTML = PROJECTS
+  .filter(p => !p.hidden)  // Filter out hidden projects (like CAD sub-projects)
+  .map(projectCard)
+  .join("");
 
 // --- Render skills legend ---
 const legend = document.getElementById("skills-legend");
