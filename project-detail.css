@@ -1,0 +1,295 @@
+/* ================================================================
+   PROJECT DETAIL PAGE STYLES
+   ================================================================ */
+
+/* Detail Header */
+.detail-header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 48px;
+}
+
+.detail-header__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.detail-header__back {
+  color: var(--copper);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+}
+
+.detail-header__back:hover {
+  opacity: 0.7;
+}
+
+/* Main Content */
+.detail-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* Hero Section */
+.detail-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 800px) {
+  .detail-hero {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-header {
+  margin-bottom: 20px;
+}
+
+.hero-id {
+  font-size: 11px;
+  color: var(--copper);
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-blurb {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  margin: 16px 0 0;
+}
+
+.hero-image {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-faint);
+  border: 1px solid var(--line);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Detail Sections */
+.detail-section {
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.detail-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.detail-section__head {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.detail-section__head h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Description */
+.detail-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-dim);
+}
+
+/* Specifications */
+.detail-specs {
+  display: grid;
+  gap: 16px;
+}
+
+.detail-spec__row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-spec__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.detail-spec__row dt {
+  font-size: 11px;
+  color: var(--copper);
+  letter-spacing: 0.5px;
+}
+
+.detail-spec__row dd {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Process Timeline */
+.process-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.process-step {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-faint);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.process-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-step__header {
+  margin-bottom: 12px;
+}
+
+.process-step__number {
+  font-size: 10px;
+  color: var(--copper);
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.process-step__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+
+.process-step__description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  margin: 0;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-faint);
+  border: 1px solid var(--line);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-message p {
+  font-size: 16px;
+  color: var(--ink-dim);
+}
+
+.error-message a {
+  color: var(--copper);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error-message a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .detail-main {
+    padding: 0 16px 60px;
+  }
+
+  .detail-section {
+    margin-bottom: 40px;
+  }
+
+  .detail-section__head h2 {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .detail-spec__row {
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+  }
+
+  .process-step {
+    padding: 16px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+}
