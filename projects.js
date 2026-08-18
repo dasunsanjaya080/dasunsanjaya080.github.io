@@ -106,34 +106,40 @@ const PROJECTS = [
     status: "Completed",
     period: "2025",
     team: "5-member group project",
-    stack: ["ESP32", "LabVIEW", "MATLAB"],
-    summary: "Designed a data acquisition system for a smart bicycle, including a heart-rate monitoring system and a custom IR-based distance-measuring sensor, with data visualization in LabVIEW and MATLAB.",
-    image: "",
+    stack: ["ESP32", "MAX30102", "MPU9250", "LabVIEW", "MATLAB", "IR Sensor"],
+    summary: "Developed a smart bicycle data acquisition system for rider health and motion monitoring. My contribution was the custom IR-based distance-measurement sensor and the heart-rate monitoring subsystem, with data logging and visualization in LabVIEW and MATLAB.",
+    image: "assets/projects/instrumentation/instrumentation.png",
     link: "",
-    detailedDescription: "This project involved creating a comprehensive instrumentation and data acquisition system for a bicycle to monitor rider health metrics and environmental conditions. The system integrates multiple sensors including heart-rate monitors, IR distance sensors, and motion sensors, with real-time data logging and visualization capabilities.",
+    detailedDescription: "This project involved designing a smart bicycle instrumentation and data acquisition system to monitor rider health and road conditions in real time. The system combines an IMU for pitch and roll estimation, a MAX30102-based heart-rate monitoring module, and a custom IR distance-measuring sensor for distance-related measurements. My contributions focused on the custom IR distance sensor and the heart-rate monitoring system, while also supporting overall DAQ integration, calibration, and signal processing. The collected data was logged and analyzed in LabVIEW and MATLAB to assess rider motion, physiological response, and road inclination.",
     processSteps: [
       {
-        title: "Sensor Selection & Integration",
-        description: "Selected appropriate sensors for heart-rate monitoring, distance measurement, and motion detection. Designed circuits for signal conditioning."
+        title: "System Requirement Analysis",
+        description: "Defined the DAQ requirements for rider health monitoring, road inclination measurement, and distance sensing on a bicycle."
       },
       {
-        title: "ESP32 Firmware Development",
-        description: "Programmed ESP32 microcontroller for multi-sensor data acquisition, calibration, and wireless data transmission."
+        title: "Custom Distance Sensor Design",
+        description: "Designed and calibrated a custom IR-based distance-measurement sensor to estimate relevant distance information for the bicycle instrumentation system."
       },
       {
-        title: "Custom IR Distance Sensor Design",
-        description: "Designed and tested custom IR-based distance measuring sensor for obstacle detection during cycling."
+        title: "Heart-Rate Monitoring Integration",
+        description: "Integrated a MAX30102-based heart-rate sensing module and processed the signal to extract pulse information during cycling."
       },
       {
-        title: "Data Logging & Storage",
-        description: "Implemented SD card data logging for long-term data collection and analysis."
+        title: "IMU-based Motion Sensing",
+        description: "Used an MPU9250 to measure accelerometer and gyroscope data and applied sensor fusion to estimate pitch and roll angles accurately."
       },
       {
-        title: "Visualization Dashboard",
-        description: "Created LabVIEW and MATLAB-based dashboards for real-time data visualization and post-processing analysis."
+        title: "DAQ, Logging & Visualization",
+        description: "Connected the sensors to the acquisition system, logged live measurements, and visualized the results in LabVIEW and MATLAB for analysis."
       }
     ],
-    galleryImages: []
+    galleryImages: [
+      "assets/projects/instrumentation/phase1.png",
+      "assets/projects/instrumentation/phase2.png",
+      "assets/projects/instrumentation/phase3.png",
+      "assets/projects/instrumentation/phase4.png",
+      "assets/projects/instrumentation/phase5.png"
+    ]
   },
   {
     id: "PRJ-04",
