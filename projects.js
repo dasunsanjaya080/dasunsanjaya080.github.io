@@ -167,44 +167,74 @@ const PROJECTS = [
   },
   {
     id: "PRJ-05",
-    title: "CAD Design Portfolio",
-    tag: "Design Showcase",
-    status: "Ongoing",
-    period: "2024 – Present",
+    title: "Hand Mixer Motor Housing — Reverse Engineering",
+    tag: "CAD Mini Project",
+    status: "Completed",
+    period: "2024",
     team: "Individual project",
-    stack: ["SolidWorks", "AutoCAD", "3D Modeling"],
-    summary: "A comprehensive collection of mechanical CAD designs spanning product engineering, robotics systems, and precision components. Projects include reverse-engineered automotive components, thruster assemblies for autonomous underwater vehicles, and custom EV battery pack solutions.",
-    image: "assets/projects/ball_valve_handle.png",
+    stack: ["SolidWorks", "3D Modeling"],
+    summary: "Reverse-engineered a commercial hand mixer motor housing with precision 3D modeling. Captured complete geometry including mounting surfaces and internal structure.",
+    image: "assets/projects/motor-housing/actual.jpeg",
     link: "",
-    detailedDescription: "This portfolio showcases a variety of CAD design and 3D modeling work across multiple mechanical engineering domains. The projects include precision reverse-engineering of commercial components, custom thruster designs for robotics, and innovative battery pack solutions for electric vehicle applications. Each design was developed using industry-standard CAD software and represents practical problem-solving in mechanical system integration.",
-    processSteps: [
-      {
-        title: "Hand Mixer Motor Housing Reverse Engineering",
-        description: "Reverse-engineered a commercial hand mixer motor housing through detailed component analysis and measurement. Captured 3D geometry with precision to enable manufacturing and modification. Designs include the housing front face, reverse mounting surface, and reference components for assembly validation."
-      },
-      {
-        title: "AUV Thruster System Integration",
-        description: "Designed thruster mounting brackets and orientation systems for the Diyakwa autonomous underwater vehicle. Includes front-facing thruster assembly and upward-pointing thruster configurations optimized for hydrodynamic efficiency and structural stability underwater."
-      },
-      {
-        title: "Removable EV Battery Pack System",
-        description: "Engineered a complete removable battery pack solution for electric vehicle applications. Design incorporates locking mechanisms, guided rail systems for secure insertion/removal, and modular internal cell arrangement. Includes internal structure, guide rail geometry, and locking interface specifications."
-      },
-      {
-        title: "Practice Mechanical Components",
-        description: "Collection of precision mechanical component designs including circular clamps, flange connections, and machine parts. These designs represent iterative learning and exploration of standard mechanical interfaces and manufacturing principles."
-      }
-    ],
+    detailedDescription: "",
+    processSteps: [],
     galleryImages: [
-      "assets/projects/ball_valve_handle.png",
       "assets/projects/motor-housing/actual.jpeg",
       "assets/projects/motor-housing/reverse_front.png",
-      "assets/projects/motor-housing/reverse_back.png",
+      "assets/projects/motor-housing/reverse_back.png"
+    ]
+  },
+  {
+    id: "PRJ-06",
+    title: "AUV Thruster System Design",
+    tag: "CAD Mini Project",
+    status: "Completed",
+    period: "2025",
+    team: "Team Diyakwa",
+    stack: ["SolidWorks", "Thruster Design"],
+    summary: "Custom thruster mounting bracket designs for autonomous underwater vehicle. Optimized for hydrodynamic efficiency and structural stability.",
+    image: "assets/projects/diyakawa/thruster_front.png",
+    link: "",
+    detailedDescription: "",
+    processSteps: [],
+    galleryImages: [
       "assets/projects/diyakawa/thruster_front.png",
-      "assets/projects/diyakawa/thruster_up.png",
+      "assets/projects/diyakawa/thruster_up.png"
+    ]
+  },
+  {
+    id: "PRJ-07",
+    title: "Removable EV Battery Pack System",
+    tag: "CAD Mini Project",
+    status: "Completed",
+    period: "2024",
+    team: "Individual project",
+    stack: ["SolidWorks", "Product Design"],
+    summary: "Complete removable battery pack solution with locking mechanisms and guided rail systems for secure insertion and removal.",
+    image: "assets/projects/removable-battery/guid_rails.JPG",
+    link: "",
+    detailedDescription: "",
+    processSteps: [],
+    galleryImages: [
       "assets/projects/removable-battery/guid_rails.JPG",
       "assets/projects/removable-battery/inside.JPG",
-      "assets/projects/removable-battery/internal_cell.JPG",
+      "assets/projects/removable-battery/internal_cell.JPG"
+    ]
+  },
+  {
+    id: "PRJ-08",
+    title: "Mechanical Components & Practice Designs",
+    tag: "CAD Mini Project",
+    status: "Completed",
+    period: "2024",
+    team: "Individual project",
+    stack: ["SolidWorks", "AutoCAD"],
+    summary: "Collection of precision mechanical component designs including clamps, flange connections, and machine parts for iterative learning.",
+    image: "assets/projects/cad-practice/circularclamp.png",
+    link: "",
+    detailedDescription: "",
+    processSteps: [],
+    galleryImages: [
       "assets/projects/cad-practice/circularclamp.png",
       "assets/projects/cad-practice/flange_pipe.png",
       "assets/projects/cad-practice/machine_part.png"
