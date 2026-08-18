@@ -60,7 +60,7 @@ const PROJECTS = [
       "assets/projects/diyakawa/phase1.png",
       "assets/projects/diyakawa/phase2.jpeg",
       "assets/projects/diyakawa/phase3.mp4",
-      "assets/projects/diyakawa/phase4.mp4"
+      "assets/projects/diyakawa/Phase4.mp4"
     ]
   },
   {
