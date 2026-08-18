@@ -173,16 +173,41 @@ const PROJECTS = [
     period: "2024 – Present",
     team: "Individual project",
     stack: ["SolidWorks", "AutoCAD", "3D Modeling"],
-    summary: "Collection of mechanical designs and CAD models covering robotics, mechanical systems, and product design concepts.",
-    image: "",
+    summary: "A comprehensive collection of mechanical CAD designs spanning product engineering, robotics systems, and precision components. Projects include reverse-engineered automotive components, thruster assemblies for autonomous underwater vehicles, and custom EV battery pack solutions.",
+    image: "assets/projects/ball_valve_handle.png",
     link: "",
-    detailedDescription: "",
-    processSteps: [],
+    detailedDescription: "This portfolio showcases a variety of CAD design and 3D modeling work across multiple mechanical engineering domains. The projects include precision reverse-engineering of commercial components, custom thruster designs for robotics, and innovative battery pack solutions for electric vehicle applications. Each design was developed using industry-standard CAD software and represents practical problem-solving in mechanical system integration.",
+    processSteps: [
+      {
+        title: "Hand Mixer Motor Housing Reverse Engineering",
+        description: "Reverse-engineered a commercial hand mixer motor housing through detailed component analysis and measurement. Captured 3D geometry with precision to enable manufacturing and modification. Designs include the housing front face, reverse mounting surface, and reference components for assembly validation."
+      },
+      {
+        title: "AUV Thruster System Integration",
+        description: "Designed thruster mounting brackets and orientation systems for the Diyakwa autonomous underwater vehicle. Includes front-facing thruster assembly and upward-pointing thruster configurations optimized for hydrodynamic efficiency and structural stability underwater."
+      },
+      {
+        title: "Removable EV Battery Pack System",
+        description: "Engineered a complete removable battery pack solution for electric vehicle applications. Design incorporates locking mechanisms, guided rail systems for secure insertion/removal, and modular internal cell arrangement. Includes internal structure, guide rail geometry, and locking interface specifications."
+      },
+      {
+        title: "Practice Mechanical Components",
+        description: "Collection of precision mechanical component designs including circular clamps, flange connections, and machine parts. These designs represent iterative learning and exploration of standard mechanical interfaces and manufacturing principles."
+      }
+    ],
     galleryImages: [
-      "assets/projects/cad-01.jpg",
-      "assets/projects/cad-02.jpg",
-      "assets/projects/cad-03.jpg",
-      "assets/projects/cad-04.jpg"
+      "assets/projects/ball_valve_handle.png",
+      "assets/projects/motor-housing/actual.jpeg",
+      "assets/projects/motor-housing/reverse_front.png",
+      "assets/projects/motor-housing/reverse_back.png",
+      "assets/projects/diyakawa/thruster_front.png",
+      "assets/projects/diyakawa/thruster_up.png",
+      "assets/projects/removable-battery/guid_rails.JPG",
+      "assets/projects/removable-battery/inside.JPG",
+      "assets/projects/removable-battery/internal_cell.JPG",
+      "assets/projects/cad-practice/circularclamp.png",
+      "assets/projects/cad-practice/flange_pipe.png",
+      "assets/projects/cad-practice/machine_part.png"
     ]
   }
 ];
