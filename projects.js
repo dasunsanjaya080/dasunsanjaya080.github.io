@@ -72,7 +72,7 @@ const PROJECTS = [
     team: "5-member group project",
     stack: ["Arduino", "Raspberry Pi", "Image Processing"],
     summary: "Designed a Cartesian robot platform for automated pick-and-place operations, with actuator control and Arduino–Raspberry Pi communication. Integrated image processing for object detection to guide pick-and-place actions.",
-    image: "",
+    image: "assets/projects/pickplace/pickplace.jpeg",
     link: "",
     detailedDescription: "This semester project involved designing and building a three-axis Cartesian robot system capable of automated pick-and-place operations. The system uses stepper motors for linear motion control on X, Y, and Z axes, with an Arduino controlling motor movements and a Raspberry Pi running image processing algorithms for object detection and positioning.",
     processSteps: [
@@ -97,7 +97,12 @@ const PROJECTS = [
         description: "Integrated all systems and conducted full functional testing with various object types and placement scenarios."
       }
     ],
-    galleryImages: []
+    galleryImages: [
+      "assets/projects/pickplace/phase1.jpeg",
+      "assets/projects/pickplace/phase2.mp4",
+      "assets/projects/pickplace/phase3.png",
+      "assets/projects/pickplace/phase4.jpg"
+    ]
   },
   {
     id: "PRJ-03",
