@@ -148,21 +148,44 @@ const PROJECTS = [
   },
   {
     id: "PRJ-04",
-    title: "ROS2 & Robotics Mini-Projects",
+    title: "ROS2 & Robotics Projects",
     tag: "Ongoing Experiments",
     status: "Ongoing",
     period: "2025 – Present",
     team: "Individual / small team",
-    stack: ["ROS2", "Gazebo", "Python"],
-    summary: "A growing set of smaller ROS2 experiments and simulations — kinematics, control, and simulation work built alongside coursework and larger team projects.",
-    image: "",
+    stack: ["ROS2 Jazzy", "URDF", "RViz", "Gazebo", "Nav2", "SLAM", "Python"],
+    summary: "Engaging in 6-DOF robot arm manipulation with ROS2 while building practical familiarity with robot description, simulation, navigation, and mapping workflows.",
+    image: "assets/ros/armbot.png",
     link: "",
-    detailedDescription: "",
-    processSteps: [],
+    detailedDescription: "This collection documents my ongoing ROS2 and robotics learning journey, from describing and visualizing robots to simulating motion, navigating with TurtleBot, and building maps from point cloud data.",
+    processSteps: [
+      {
+        title: "ROS2 Jazzy, URDF & RViz",
+        description: "Getting familiar with ROS2 Jazzy, the structure of URDF files, and robot visualization workflows in RViz."
+      },
+      {
+        title: "Gazebo Simulation & Bringup",
+        description: "Getting familiar with the Gazebo simulator, bringup files, and launch files used to start and connect a robotics simulation."
+      },
+      {
+        title: "Nav2 with TurtleBot",
+        description: "Using the Nav2 navigation stack with TurtleBot to explore autonomous navigation and the components involved in a mobile robot workflow."
+      },
+      {
+        title: "SLAM & Point Cloud Data",
+        description: "Getting hands-on practice with SLAM and navigation using point cloud data to understand mapping and localization in a robot environment."
+      },
+      {
+        title: "6-DOF Robot Arm Manipulation",
+        description: "Engaging in 6-DOF robot arm manipulation with ROS2, connecting robot modeling, control, and motion planning concepts."
+      }
+    ],
     galleryImages: [
-      "assets/projects/ros2-01.jpg",
-      "assets/projects/ros2-02.jpg",
-      "assets/projects/ros2-03.jpg"
+      "assets/ros/armbot.png",
+      "assets/ros/course1_rviz.png",
+      "assets/ros/course1_gazebo.png",
+      "assets/ros/nav2.png",
+      "assets/ros/slam.png"
     ]
   },
   {
